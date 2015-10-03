@@ -1,0 +1,195 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//font
+
+@font-face {
+	font-family: "Mohave";
+	src:url(/Mohave.otf);
+}
+
+body {
+    
+    background-color: #E9E8E7;
+}
+
+.logo {
+	width: 700px;
+	margin: auto;
+	margin-top: 100px;
+}
+	.logo img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+.containers {
+
+	text-align: center;
+	width:300px;
+	border-radius: 10px;
+	margin: auto;
+	height: 225px;
+	background-color: #CC5151;
+	padding: 2rem;
+	border: 1px solid #CC5151;
+	opacity: 0.8;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+.containers:hover {
+	opacity: 1;
+}
+.inp {
+	width: 95%;
+	margin: auto;
+	margin-bottom: 10px;
+	padding: 1rem;
+	background-color: #ecf2f4;
+	border-radius: 0.6rem;
+	border: 1px solid #ecf2f4;
+	text-align: left;
+
+}
+#forgot {
+	margin-top: 15px;
+	color: white;
+}
+#btns {
+	margin-top: 10px;
+	border-radius: 0.6rem;
+	background-color: #DAD5CF;
+
+}
+.btn .glyphicon {
+	font-size: 3rem;
+	color: #fff;
+}
+.full-width {
+	width: 95%;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-bottomright: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #339966;
+  border-radius: 0.6rem;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen  and (max-width : 480px) {
+    body {
+      background-color: #E9E8E7;
+   }
+   .logo {
+      width: 300px;
+      margin: auto;
+      margin-top: 100px;
+   }
+   .containers {
+      margin-top: 100px;
+   }
+
+
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 768px) {
+   body {
+      background-color: #E9E8E7;
+   }
+   .logo {
+      width: 400px;
+      margin: auto;
+      margin-top: 100px;
+   }
+   .containers {
+      margin-top: 150px;
+   }
+
+}  
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-width : 768px) and (max-width: 1224px){
+   body {
+         background-color: #E9E8E7;
+      }
+   .logo {
+      width: 500px;
+      margin: auto;
+      margin-top: 100px;
+   }
+   .containers {
+      margin-top: 100px;
+   }
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+     body {
+    background: url(/background.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #E9E8E7;
+}
+
+}
